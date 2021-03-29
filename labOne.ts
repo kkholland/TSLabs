@@ -67,7 +67,7 @@ function calcAverageProductPrice(products:Product[]):number{
         for (let product of products){
             total += product.price;
         }
-        return total;
+        return total/products.length;
     } else{
         return 0;
     }
